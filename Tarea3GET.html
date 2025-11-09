@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula 1 - Sitio Web</title>
+</head>
+<body>
+    <h1>Bienvenido a este espacio sobre la Fórmula 1 y su historia</h1>
+    <hr>
+
+    <!-- Menú -->
+    <p>
+        <a href="#inicio"><u>Inicio</u></a> |
+        <a href="#acerca"><u>Acerca de</u></a> |
+        <a href="#producto"><u>Producto</u></a> |
+        <a href="#formulario"><u>Registro</u></a> |
+        <a href="#contacto"><u>Contacto</u></a>
+    </p>
+
+    <!-- Sección Inicio -->
+    <h2 id="inicio">Inicio</h2>
+    <p>La Fórmula 1 (F1) es la máxima categoría del automovilismo mundial. Es una competencia anual organizada por la FIA, donde pilotos y escuderías compiten en monoplazas diseñados para alcanzar velocidades extremas. Se celebra desde 1950 y combina velocidad, tecnología, estrategia y espectáculo.</p>
+
+    <!-- Sección Acerca -->
+    <h2 id="acerca">Acerca de</h2>
+    <p>En esta página usted podrá obtener información sobre la historia, evolución, equipos destacados, pilotos legendarios, circuitos icónicos y las últimas novedades de cada temporada.</p>
+
+    <!-- Producto -->
+    <h2 id="producto">Producto</h2>
+    <img src="Imagen/i1.jpg" alt="Vehículo F1" width="250">
+    <p>
+        <video width="250" controls>
+            <source src="Imagen/F1.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+    </p>
+
+    <p>Este monoplaza de Fórmula 1 representa la cúspide de la ingeniería automotriz, con chasis ultraligero, aerodinámica avanzada y un motor híbrido de alto rendimiento.</p>
+
+    <!-- Tabla -->
+    <table border="1">
+        <tr>
+            <th>Escudería</th><th>Piloto</th><th>País</th><th>Año</th><th>Vehículo</th>
+        </tr>
+        <tr><td>Red Bull</td><td>Max Verstappen</td><td>Países Bajos</td><td>2023</td><td>RB19</td></tr>
+        <tr><td>Mercedes</td><td>Lewis Hamilton</td><td>Reino Unido</td><td>2021</td><td>W12</td></tr>
+        <tr><td>Ferrari</td><td>Charles Leclerc</td><td>Mónaco</td><td>2022</td><td>F1-75</td></tr>
+    </table>
+
+    <!-- Lista -->
+    <p><b>Temas relacionados:</b></p>
+    <ol>
+        <li>Historia de la Fórmula 1</li>
+        <li>Escuderías destacadas</li>
+        <li>Pilotos legendarios</li>
+        <li>Circuitos famosos</li>
+        <li>Temporada actual</li>
+        <li>Tecnología en los monoplazas</li>
+        <li>Reglamento y puntuación</li>
+    </ol>
+
+    <!-- Formulario GET -->
+    <h2 id="registro">Formulario de Registro de Fanático (GET)</h2>
+  <form action="VerificacionTare3GET.html" method="get">
+    <label>Nombre completo:</label><br>
+    <input type="text" name="nombre" required><br><br>
+
+    <label>Edad:</label><br>
+    <input type="number" name="edad" min="5" max="120"><br><br>
+
+    <label>Correo electrónico:</label><br>
+    <input type="email" name="correo" required><br><br>
+
+    <label>País:</label><br>
+    <input type="text" name="pais"><br><br>
+
+    <label>¿Desde qué año sigues la F1?</label><br>
+    <input type="number" name="anio_fan" min="1950" max="2025"><br><br>
+
+    <label>Escudería favorita:</label><br>
+    <select name="escuderia">
+      <option value="Red Bull">Red Bull</option>
+      <option value="Ferrari">Ferrari</option>
+      <option value="Mercedes">Mercedes</option>
+      <option value="McLaren">McLaren</option>
+    </select><br><br>
+
+    <label>Piloto favorito:</label><br>
+    <input type="text" name="piloto"><br><br>
+
+    <label>Gran Premio preferido:</label><br>
+    <input type="text" name="granpremio"><br><br>
+
+    <label>¿Has asistido a una carrera?</label><br>
+    <input type="radio" name="asistio" value="Sí"> Sí
+    <input type="radio" name="asistio" value="No"> No<br><br>
+
+    <label>Comentario o experiencia:</label><br>
+    <textarea name="comentario" rows="3" cols="40"></textarea><br><br>
+
+    <input type="submit" value="Enviar Registro">
+  </form>
+
+    <!-- Contacto -->
+    <h2 id="contacto">Contacto</h2>
+    <p>Erick Cajas<br>
+       Tel: 0960293315<br>
+       <a href="mailto:escajas1@espe.edu.ec">escajas1@espe.edu.ec</a><br>
+       <a href="mailto:erickscajast02@gmail.com">erickscajast02@gmail.com</a>
+    </p>
+</body>
+</html>

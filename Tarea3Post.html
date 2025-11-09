@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fórmula 1</title>
+</head>
+<body>
+  <h1>Bienvenido a este espacio sobre la Fórmula 1 y su historia</h1>
+  <hr>
+
+  <!-- Menú de navegación -->
+  <p>
+    <a href="#inicio"><u>Inicio</u></a> |
+    <a href="#acerca"><u>Acerca de</u></a> |
+    <a href="#producto"><u>Producto</u></a> |
+    <a href="#contacto"><u>Contacto</u></a>
+  </p>
+
+  <!-- Sección Inicio -->
+  <h2 id="inicio">Inicio</h2>
+  <p>
+    La Fórmula 1 (F1) es la máxima categoría del automovilismo mundial. 
+    Es una competencia anual organizada por la FIA, donde pilotos y escuderías compiten 
+    en monoplazas diseñados para alcanzar velocidades extremas. 
+    Se celebra desde 1950 y combina velocidad, tecnología, estrategia y espectáculo.
+  </p>
+
+  <!-- Sección Acerca de -->
+  <h2 id="acerca">Acerca de</h2>
+  <p>
+    En esta página usted podrá obtener información sobre la historia, evolución, equipos destacados, 
+    pilotos legendarios, circuitos icónicos y las últimas novedades de cada temporada. 
+    Nuestro objetivo es ofrecerle una experiencia informativa y apasionante sobre este deporte.
+  </p>
+
+  <!-- Sección Producto -->
+  <h2 id="producto">Producto</h2>
+  <img src="Imagen/i1.jpg" alt="Vehículo F1" width="250">
+  <p>
+    <video width="250" controls>
+      <source src="Imagen/F1.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+  </p>
+  <p>
+    Este monoplaza de Fórmula 1 representa la cúspide de la ingeniería automotriz. 
+    Diseñado para alcanzar velocidades superiores a los 300 km/h, cuenta con un chasis 
+    ultraligero de fibra de carbono, aerodinámica avanzada y un motor híbrido de alto rendimiento.
+  </p>
+
+  <!-- Tabla de Pilotos -->
+  <table border="1">
+    <tr>
+      <th>Escudería</th>
+      <th>Piloto</th>
+      <th>País</th>
+      <th>Año</th>
+      <th>Vehículo</th>
+    </tr>
+    <tr>
+      <td>Red Bull Racing</td>
+      <td>Max Verstappen</td>
+      <td>Países Bajos</td>
+      <td>2023</td>
+      <td>RB19</td>
+    </tr>
+    <tr>
+      <td>Mercedes-AMG</td>
+      <td>Lewis Hamilton</td>
+      <td>Reino Unido</td>
+      <td>2021</td>
+      <td>W12</td>
+    </tr>
+    <tr>
+      <td>Ferrari</td>
+      <td>Charles Leclerc</td>
+      <td>Mónaco</td>
+      <td>2022</td>
+      <td>F1-75</td>
+    </tr>
+    <tr>
+      <td>McLaren</td>
+      <td>Lando Norris</td>
+      <td>Reino Unido</td>
+      <td>2024</td>
+      <td>MCL38</td>
+    </tr>
+  </table>
+
+  <!-- Lista de temas -->
+  <p>
+    <b>Temas relacionados:</b><br>
+    1. Historia de la Fórmula 1<br>
+    2. Escuderías destacadas<br>
+    3. Pilotos legendarios<br>
+    4. Circuitos famosos<br>
+    5. Temporada actual<br>
+    6. Tecnología en los monoplazas<br>
+    7. Reglamento y puntuación
+  </p>
+
+  <!-- Contacto -->
+  <h2 id="contacto">Contacto</h2>
+  <p>
+    Erick Cajas<br>
+    Tel: 0960293315<br>
+    <a href="mailto:escajas1@espe.edu.ec">escajas1@espe.edu.ec</a><br>
+    <a href="mailto:erickscajast02@gmail.com">erickscajast02@gmail.com</a>
+  </p>
+
+  <!-- ============================================= -->
+  <!-- FORMULARIO DE REGISTRO DE SITIO TURÍSTICO (POST) -->
+  <!-- ============================================= -->
+  <h2 id="registro">Formulario de Registro de Escudería (POST)</h2>
+  <form action="VerificacionTarea3Post.html" method="post" enctype="multipart/form-data">
+    <label>Nombre del equipo:</label><br>
+    <input type="text" name="nombre_equipo" required><br><br>
+
+    <label>País de origen:</label><br>
+    <input type="text" name="pais_equipo"><br><br>
+
+    <label>Año de fundación:</label><br>
+    <input type="number" name="fundacion" min="1950" max="2025"><br><br>
+
+    <label>Tipo de motor:</label><br>
+    <select name="motor">
+      <option value="Honda">Honda</option>
+      <option value="Mercedes">Mercedes</option>
+      <option value="Ferrari">Ferrari</option>
+      <option value="Renault">Renault</option>
+    </select><br><br>
+
+    <label>Pilotos principales:</label><br>
+    <input type="text" name="pilotos" placeholder="Ejemplo: Verstappen - Pérez"><br><br>
+
+    <label>Presupuesto anual (en millones USD):</label><br>
+    <input type="number" name="presupuesto" step="0.1"><br><br>
+
+    <label>Imagen del monoplaza:</label><br>
+    <input type="file" name="imagen" accept="image/*"><br><br>
+
+    <label>¿Participa en la temporada actual?</label><br>
+    <input type="radio" name="activo" value="Sí"> Sí
+    <input type="radio" name="activo" value="No"> No<br><br>
+
+    <label>Comentarios o notas adicionales:</label><br>
+    <textarea name="comentarios" rows="3"></textarea><br><br>
+
+    <input type="submit" value="Registrar Escudería">
+  </form>
+
+  <!-- SCRIPT: guarda datos y redirige a VerificacionTare3Post.html -->
+   
+  <script>
+    const form = document.getElementById("formF1");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // Evita el envío real del formulario
+      const datos = {};
+
+      // Recorre todos los campos del formulario
+      const formData = new FormData(form);
+      formData.forEach((valor, clave) => {
+        if (clave === "imagen" && valor.name) {
+          datos[clave] = valor.name; // guarda solo el nombre de la imagen
+        } else {
+          datos[clave] = valor;
+        }
+      });
+
+      // Guarda los datos en localStorage
+      localStorage.setItem("formularioF1", JSON.stringify(datos));
+
+      // Redirige a la página de verificación
+      window.location.href = "VerificacionTare3Post.html";
+    });
+  </script>
+
+</body>
+</html>

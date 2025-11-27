@@ -44,7 +44,7 @@ if (!empty($_FILES['imagen']) && $_FILES['imagen']['error'] !== UPLOAD_ERR_NO_FI
 
   <div class="max-w-4xl mx-auto px-4 py-8">
     <div class="bg-white rounded-lg shadow p-6">
-      <h1 class="text-2xl font-bold mb-2">Verificación de Datos — Método POST</h1>
+      <h1 class="text-2xl font-bold mb-2">Verificación de Datos</h1>
       <p class="text-sm text-gray-600 mb-4">Los datos enviados desde el formulario aparecen a continuación. La imagen subida (si se proporcionó) se guarda en <code>Imagen/</code>.</p>
 
       <?php if (!$received && !$uploadResult): ?>

@@ -12,7 +12,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Fórmula 1</a>
+      <a class="navbar-brand text-danger fw-bold" href="#">🏁 Fórmula 1</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Alternar navegación">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -32,9 +32,14 @@
   <main class="container my-5">
 
     <!-- Header -->
-    <header class="mb-4">
+    <header class="mb-4 bg-dark text-white rounded-3 p-4">
       <h1 class="display-6">Bienvenido a este espacio sobre la Fórmula 1 y su historia</h1>
-      <hr>
+      <hr class="border-light">
+      <p class="lead">Explora la historia, equipos, circuitos icónicos y las noticias más recientes de la máxima categoría del automovilismo mundial — todo con estilo Bootstrap.</p>
+      <div class="d-flex gap-2 mt-3">
+        <a href="#producto" class="btn btn-danger">Ver monoplazo y video</a>
+        <a href="#pilotos-destacados" class="btn btn-outline-light">Pilotos destacados</a>
+      </div>
     </header>
 
     <!-- Inicio y Acerca de -->
@@ -44,7 +49,9 @@
           <div class="card-body">
             <h2 class="card-title h5">Inicio</h2>
             <p class="card-text">
-              La Fórmula 1 (F1) es la máxima categoría del automovilismo mundial. Es una competencia anual organizada por la FIA, donde pilotos y escuderías compiten en monoplazas diseñados para alcanzar velocidades extremas. Se celebra desde 1950 y combina velocidad, tecnología, estrategia y espectáculo.
+              La Fórmula 1 (F1) es la máxima categoría del automovilismo mundial. Es una competencia anual organizada por la FIA, donde pilotos y escuderías 
+              compiten en monoplazas diseñados para alcanzar velocidades extremas. Se celebra desde 1950 y combina velocidad, tecnología,
+              estrategia y espectáculo.
             </p>
           </div>
         </div>
@@ -55,23 +62,185 @@
           <div class="card-body">
             <h2 class="card-title h5">Acerca de</h2>
             <p class="card-text">
-              En esta página usted podrá obtener información sobre la historia, evolución, equipos destacados, pilotos legendarios, circuitos icónicos y las últimas novedades de cada temporada. Nuestro objetivo es ofrecerle una experiencia informativa y apasionante sobre este deporte.
+              En esta página usted podrá obtener información sobre la historia, evolución, equipos destacados, pilotos legendarios, 
+              circuitos icónicos y las últimas novedades de cada temporada. Nuestro objetivo es ofrecerle una experiencia informativa y 
+              apasionante sobre este deporte.
             </p>
           </div>
         </div>
       </article>
     </section>
 
+    <!-- Galería de imágenes -->
+    <!--
+      Si prefieres usar imágenes locales evita los enlaces externos.
+      Coloca las imágenes en la carpeta 'Imagen/' y reemplaza los 'src' por ejemplo:
+        Imagen/verstappen.jpg
+        Imagen/hamilton.jpg
+        Imagen/schumacher.jpg
+        Imagen/senna.jpg
+        Imagen/alonso.jpg
+        Imagen/vettel.jpg
+        Imagen/lauda.jpg
+    -->
+    <section id="galeria" class="mb-5 border-start border-4 border-danger rounded-3 p-3 bg-white shadow-sm">
+      <h2 class="h5 mb-3"><span class="badge bg-danger me-2">🏁</span>Galería</h2>
+      <div class="row g-3 justify-content-center align-items-stretch">
+        <div class="col-12 col-sm-6 col-md-4 d-flex">
+          <div class="card w-100 h-100 d-flex flex-column shadow-sm">
+            <div class="ratio ratio-4x3">
+              <img src="Imagen/i1.jpeg" class="w-100 h-100 object-fit-cover" alt="Monoplaza F1" data-bs-toggle="modal" data-bs-target="#modalImg1" role="button" tabindex="0">
+            </div>
+            <div class="card-body text-center mt-auto">
+              <p class="card-text small mb-0">Monoplaza en pista — imagen local</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 d-flex">
+          <div class="card w-100 h-100 d-flex flex-column shadow-sm">
+            <div class="ratio ratio-4x3">
+              <img src="Imagen/producto.jpg" class="w-100 h-100 object-fit-cover" alt="Monoplaza en taller" data-bs-toggle="modal" data-bs-target="#modalImg2" role="button" tabindex="0">
+            </div>
+            <div class="card-body text-center mt-auto">
+              <p class="card-text small mb-0">Trabajo en el box / Pit-crew.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 d-flex">
+          <div class="card w-100 h-100 d-flex flex-column shadow-sm">
+            <div class="ratio ratio-4x3">
+              <img src="Imagen/monaco.jpg" class="w-100 h-100 object-fit-cover" alt="Circuito Mónaco" data-bs-toggle="modal" data-bs-target="#modalImg3" role="button" tabindex="0">
+            </div>
+            <div class="card-body text-center mt-auto">
+              <p class="card-text small mb-0">Circuito icónico — Mónaco.</p>
+            </div>
+          </div>
+        </div>
+      
+      <!-- Modales galería -->
+      <div class="modal fade" id="modalImg1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <img src="Imagen/i1.jpeg" class="img-fluid w-100" alt="Monoplaza F1">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalImg2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcd" class="img-fluid w-100" alt="Pit stop">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalImg3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <img src="Imagen/monaco.jpg" class="img-fluid w-100" alt="Circuito Mónaco">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Historia — Accordion -->
+    <section id="historia" class="mb-5">
+      <h2 class="h5 mb-3"><span class="badge bg-danger me-2">🏁</span>Historia y evolución</h2>
+      <div class="accordion" id="historiaAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Orígenes (1950–1970)
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#historiaAccordion">
+            <div class="accordion-body">
+              <div class="row g-3 align-items-center">
+                <div class="col-auto d-none d-sm-block">
+                  <img src="Imagen/historia.jpg" class="img-fluid w-100" alt="Historia F1">
+                </div>
+                <div class="col">
+                  <p>La Fórmula 1 comenzó en 1950 como el campeonato mundial de monoplazas de la FIA. Tras la Segunda Guerra 
+                    Mundial, la competición reorganizó el automovilismo internacional y consolidó un calendario global.</p>
+                  <p>Durante la década de 1950 y 1960 la tecnología de los coches creció rápidamente: chasis más ligeros, 
+                    mejores frenos y los primeros trabajos serios de aerodinámica. Pilotos como Juan Manuel Fangio, Alberto 
+                    Ascari y Stirling Moss se convirtieron en iconos, y las escuderías comenzaron a profesionalizarse.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Era moderna (1980–2000)
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#historiaAccordion">
+            <div class="accordion-body">
+              <div class="row g-3 align-items-center">
+                <div class="col-auto d-none d-sm-block">
+                  <img src="Imagen/moderno.jpg" class="img-fluid w-100" alt="Era Moderna">
+                </div>
+                <div class="col">
+                  <p>La era de 1980 a 2000 representó una explosión tecnológica. La electrónica, las suspensiones complejas y 
+                    las mejoras aerodinámicas (alerones, difusores) llevaron el rendimiento a nuevos límites. También fue la 
+                    época de grandes rivalidades y de la profesionalización absoluta en simulación y análisis de datos.</p>
+                  <p>Escuderías como McLaren y Williams lideraron con innovación, y pilotos como Ayrton Senna, Alain Prost, 
+                    Nigel Mansell y luego Michael Schumacher escribieron páginas legendarias en la F1.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Actualidad y tecnología (2000–presente)
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#historiaAccordion">
+            <div class="accordion-body">
+              <div class="row g-3 align-items-center">
+                <div class="col-auto d-none d-sm-block">
+                 <img src="Imagen/dosmil.jpg" class="img-fluid w-100" alt="Dos mil en adelante">
+                </div>
+                <div class="col">
+                  <p>En el siglo XXI la Fórmula 1 se ha transformado en un deporte de alta tecnología: la introducción de 
+                    unidades de potencia híbridas, el uso intensivo de CFD y túneles de viento, y protocolos de seguridad 
+                    avanzados han cambiado el panorama.</p>
+                  <p>Además, la F1 ha adoptado iniciativas de sostenibilidad y regulaciones para intentar nivelar la 
+                    competitividad entre equipos. Escuderías como Mercedes y Red Bull han dominado distintas etapas recientes, 
+                    con figuras como Lewis Hamilton y Max Verstappen al frente.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Producto: imagen y video -->
-    <section id="producto" class="mb-5">
-      <h2 class="h5 mb-3">Producto</h2>
+    <section id="producto" class="mb-5 border-start border-4 border-dark bg-secondary bg-opacity-10 rounded-3 p-3">
+      <h2 class="h5 mb-3"><span class="badge bg-dark me-2">🏎️</span>Producto</h2>
       <div class="row g-3">
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="card">
-            <img src="Imagen/i1.jpeg" class="card-img-top img-fluid" alt="Vehículo F1">
+            <img src="Imagen/producto.jpg" class="card-img-top img-fluid" alt="Producto Fórmula 1">
             <div class="card-body">
               <p class="card-text">
-                Este monoplaza de Fórmula 1 representa la cúspide de la ingeniería automotriz. Diseñado para alcanzar velocidades superiores a los 300 km/h, cuenta con un chasis ultraligero de fibra de carbono, aerodinámica avanzada y un motor híbrido de alto rendimiento.
+                Este monoplaza de Fórmula 1 representa la cúspide de la ingeniería automotriz. Diseñado para alcanzar velocidades 
+                superiores a los 300 km/h, cuenta con un chasis ultraligero de fibra de carbono, aerodinámica avanzada y un motor 
+                híbrido de alto rendimiento.
               </p>
             </div>
           </div>
@@ -88,9 +257,234 @@
       </div>
     </section>
 
+    <!-- Pilotos destacados (cards) -->
+    <section id="pilotos-destacados" class="mb-5 bg-light rounded-3 p-3 border-start border-4 border-danger">
+      <h2 class="h5 mb-3"><span class="badge bg-danger me-2">⭐</span>Pilotos destacados</h2>
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <div class="ratio ratio-4x3">
+              <img src="Imagen/max.jpg" class="w-100 h-100 object-fit-cover" alt="Max Verstappen">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h6">Max Verstappen</h3>
+              <p class="card-text small flex-grow-1">Campeón dominante de los años recientes con Red Bull; conocido por su velocidad y consistencia.</p>
+              <button type="button" class="btn btn-danger mt-2" data-bs-toggle="modal" data-bs-target="#modalVerstappen">Más info</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <div class="ratio ratio-4x3">
+              <img src="Imagen/lewis.jpg" class="w-100 h-100 object-fit-cover" alt="Lewis Hamilton">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h6">Lewis Hamilton</h3>
+              <p class="card-text small flex-grow-1">Siete veces campeón y figura central en la Fórmula 1 moderna.</p>
+              <button type="button" class="btn btn-danger mt-2" data-bs-toggle="modal" data-bs-target="#modalHamilton">Más info</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <div class="ratio ratio-4x3">
+              <img src="Imagen/Michael.jpg" class="w-100 h-100 object-fit-cover" alt="Michael Schumacher">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h6">Michael Schumacher</h3>
+              <p class="card-text small flex-grow-1">Leyenda de Ferrari; récords históricos y dominio técnico.</p>
+              <button type="button" class="btn btn-danger mt-2" data-bs-toggle="modal" data-bs-target="#modalSchumacher">Más info</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <div class="ratio ratio-4x3">
+              <img src="Imagen/Ayrton.jpg" class="w-100 h-100 object-fit-cover" alt="Ayrton Senna">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h6">Ayrton Senna</h3>
+              <p class="card-text small flex-grow-1">Tricampeón y uno de los pilotos más carismáticos de la historia.</p>
+              <button type="button" class="btn btn-danger mt-2" data-bs-toggle="modal" data-bs-target="#modalSenna">Más info</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <div class="ratio ratio-4x3">
+              <img src="Imagen/Fernando.jpg" class="w-100 h-100 object-fit-cover" alt="Fernando Alonso">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h6">Fernando Alonso</h3>
+              <p class="card-text small flex-grow-1">Veterano con gran experiencia y dos títulos mundiales; sigue compitiendo en la máxima categoría.</p>
+              <button type="button" class="btn btn-danger mt-2" data-bs-toggle="modal" data-bs-target="#modalAlonso">Más info</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <div class="ratio ratio-4x3">
+              <img src="Imagen/Sebastian.jpg" class="w-100 h-100 object-fit-cover" alt="Sebastian Vettel">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h6">Sebastian Vettel</h3>
+              <p class="card-text small flex-grow-1">Cuádruple campeón mundial conocido por su paso dominante en Red Bull.</p>
+              <button type="button" class="btn btn-danger mt-2" data-bs-toggle="modal" data-bs-target="#modalVettel">Más info</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <div class="ratio ratio-4x3">
+              <img src="Imagen/Niki.jpg" class="w-100 h-100 object-fit-cover" alt="Niki Lauda">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h6">Niki Lauda</h3>
+              <p class="card-text small flex-grow-1">Tres veces campeón y figura clave en la historia del automovilismo.</p>
+              <button type="button" class="btn btn-danger mt-2" data-bs-toggle="modal" data-bs-target="#modalLauda">Más info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modales para todos los pilotos -->
+      <div class="mt-3">
+        <!-- Verstappen -->
+        <div class="modal fade" id="modalVerstappen" tabindex="-1" aria-labelledby="modalVerstappenLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalVerstappenLabel">Max Verstappen</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <p>Max Emilian Verstappen es un piloto neerlandés considerado el referente actual en la F1 por su juventud y consistencia. Debutó en 2015 y ha logrado múltiples campeonatos consecutivos con Red Bull.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hamilton -->
+        <div class="modal fade" id="modalHamilton" tabindex="-1" aria-labelledby="modalHamiltonLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalHamiltonLabel">Lewis Hamilton</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <p>Lewis Hamilton, siete veces campeón del mundo, es una figura central de la Fórmula 1 moderna y referente dentro y fuera de la pista.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schumacher -->
+        <div class="modal fade" id="modalSchumacher" tabindex="-1" aria-labelledby="modalSchumacherLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalSchumacherLabel">Michael Schumacher</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <p>Michael Schumacher dominó la F1 en los años 2000 con Ferrari y dejó un legado de récords de velocidad, técnica y preparación física.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Senna -->
+        <div class="modal fade" id="modalSenna" tabindex="-1" aria-labelledby="modalSennaLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalSennaLabel">Ayrton Senna</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <p>Ayrton Senna da Silva es uno de los pilotos más recordados por su entrega y talento en condiciones difíciles.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alonso -->
+        <div class="modal fade" id="modalAlonso" tabindex="-1" aria-labelledby="modalAlonsoLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalAlonsoLabel">Fernando Alonso</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <p>Fernando Alonso, bicampeón del mundo, es conocido por su consistencia, táctica y larga carrera en la F1.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vettel -->
+        <div class="modal fade" id="modalVettel" tabindex="-1" aria-labelledby="modalVettelLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalVettelLabel">Sebastian Vettel</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <p>Sebastian Vettel fue un piloto dominante con Red Bull en la primera parte de los años 2010 y es conocido por su precisión y capacidad para obtener el máximo rendimiento del coche.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lauda -->
+        <div class="modal fade" id="modalLauda" tabindex="-1" aria-labelledby="modalLaudaLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLaudaLabel">Niki Lauda</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <p>Niki Lauda fue tres veces campeón mundial y su historia incluye un regreso épico tras un grave accidente, además de su importante rol posterior como dirigente en F1.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <!-- Tabla de Pilotos -->
-    <section id="pilotos" class="mb-5">
-      <h2 class="h5 mb-3">Tabla de Pilotos</h2>
+    <section id="pilotos" class="mb-5 border-start border-4 border-dark rounded-3 p-3 bg-white shadow-sm">
+      <h2 class="h5 mb-3"><span class="badge bg-dark me-2">🏁</span>Tabla de Pilotos</h2>
       <div class="table-responsive">
         <table class="table table-striped table-bordered align-middle">
           <thead class="table-dark">
@@ -136,6 +530,83 @@
       </div>
     </section>
 
+    <!-- Datos curiosos y records -->
+    <section id="datos" class="mb-5 bg-secondary bg-opacity-10 rounded-3 p-3 border-start border-4 border-danger">
+      <h2 class="h5 mb-3"><span class="badge bg-danger me-2">📊</span>Datos curiosos & records</h2>
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <div class="card h-100 shadow-sm p-3">
+            <h3 class="h6">Estadísticas de interés</h3>
+            <ul class="list-unstyled small">
+              <li class="mb-2"><strong>Velocidad punta:</strong> > 360 km/h (récords en circuitos rápidos).</li>
+              <li class="mb-2"><strong>Máxima aceleración:</strong> Desde 0 a 100 km/h en ~2.5s en representación de monoplazas modernos.</li>
+              <li class="mb-2"><strong>Vueltas rápidas:</strong> A menudo decisivas en estrategia de carrera.</li>
+              <li class="mb-2"><strong>Evolución:</strong> Los coches modernos integran sistemas híbridos que mejoran el rendimiento y la eficiencia.</li>
+            </ul>
+            <div class="mt-2">
+              <span class="badge bg-primary me-1">Podio</span>
+              <span class="badge bg-success me-1">Velocidad</span>
+              <span class="badge bg-info text-dark">Innovación</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="card h-100 shadow-sm p-3">
+            <h3 class="h6">Récords y curiosidades</h3>
+            <ol class="small ps-3 mb-0">
+              <li>Michael Schumacher y Lewis Hamilton comparten múltiples campeonatos.</li>
+              <li>El Gran Premio de Mónaco es de los más lentos pero técnicos y famosos.</li>
+              <li>Algunos equipos invierten cientos de millones al año en desarrollo.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Circuitos — Carrusel -->
+    <section id="circuitos" class="mb-5 bg-white rounded-3 p-3 shadow-sm border-start border-4 border-danger">
+      <h2 class="h5 mb-3"><span class="badge bg-danger me-2">📍</span>Circuitos icónicos</h2>
+      <div id="circuitosCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#circuitosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Circuito 1"></button>
+          <button type="button" data-bs-target="#circuitosCarousel" data-bs-slide-to="1" aria-label="Circuito 2"></button>
+          <button type="button" data-bs-target="#circuitosCarousel" data-bs-slide-to="2" aria-label="Circuito 3"></button>
+        </div>
+        <div class="carousel-inner rounded-3 shadow-sm">
+          <div class="carousel-item active">
+             <img src="Imagen/monaco.jpg" class="w-100 h-100 object-fit-cover" alt="Monacio">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded px-2 py-1">
+              <h5>Mónaco</h5>
+              <p>Un trazado urbano que exige precisión milimétrica y estrategia perfecta.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Imagen/Spa.jpg" class="w-100 h-100 object-fit-cover" alt="Spa-Francorchamps">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded px-2 py-1">
+              <h5>Spa-Francorchamps</h5>
+              <p>Famoso por Eau Rouge y sus cambios de elevación; uno de los favoritos de pilotos y fans.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Imagen/Silverstone.png" class="w-100 h-100 object-fit-cover" alt="Silverstone">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded px-2 py-1">
+              <h5>Silverstone</h5>
+              <p>La cuna del Gran Premio de Gran Bretaña y uno de los circuitos más históricos.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#circuitosCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#circuitosCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
     <!-- Temas relacionados y contacto -->
     <section class="row mb-5">
       <div class="col-12 col-md-6">
@@ -162,72 +633,138 @@
       </div>
     </section>
 
+    <!-- Noticias recientes (cards) -->
+    <section id="noticias" class="mb-5 bg-light rounded-3 p-3 border-start border-4 border-danger">
+      <h2 class="h5 mb-3"><span class="badge bg-danger me-2">📰</span>Noticias recientes</h2>
+      <div class="row g-3">
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcde" class="card-img-top" alt="Noticia 1">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h6">Cambios en el reglamento</h3>
+              <p class="card-text small flex-grow-1">Nuevas regulaciones técnicas para la temporada buscan mejorar la competitividad y sostenibilidad.</p>
+              <a href="#" class="btn btn-danger mt-2">Leer más</a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ — preguntas frecuentes -->
+    <section id="faq" class="mb-5 bg-white rounded-3 p-3 shadow-sm border-start border-4 border-danger">
+      <h2 class="h5 mb-3"><span class="badge bg-danger me-2">❓</span>Preguntas frecuentes</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeading1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+              ¿Cómo funciona la puntuación?
+            </button>
+          </h2>
+          <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              La puntuación tradicional asigna puntos a los 10 primeros (25,18,15,12,10,8,6,4,2,1). Además, existe punto por vuelta rápida si el piloto termina en el top-10.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+              ¿Qué diferencias hay entre escudería y equipo?
+            </button>
+          </h2>
+          <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              La "escudería" es la organización que inscribe coches y pilotos en el campeonato. "Equipo" puede referirse al grupo deportivo o a una unidad de trabajo dentro de la escudería; a menudo se usan como sinónimos.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Formulario de Registro -->
-    <section id="registro" class="mb-5">
-      <h2 class="h5 mb-3">Formulario de Registro de Escudería (POST)</h2>
+    <section id="registro" class="mb-5 bg-secondary bg-opacity-10 rounded-3 p-3 border-start border-4 border-danger">
+      <h2 class="h5 mb-3"><span class="badge bg-danger me-2">📝</span>Formulario de Registro de Escudería</h2>
 
-      <form id="formF1" action="VerificacionTarea3Post.php" method="post" enctype="multipart/form-data" class="row g-3 needs-validation" novalidate>
-        <div class="col-12 col-md-6">
-          <label for="nombre_equipo" class="form-label">Nombre del equipo</label>
-          <input id="nombre_equipo" name="nombre_equipo" type="text" class="form-control" required>
-          <div class="invalid-feedback">Ingresa el nombre del equipo.</div>
-        </div>
+      <form id="formF1" action="VerificacionTarea3Post.php" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <div class="card shadow-sm h-100 p-3">
+              <h3 class="h6">Información general</h3>
+              <div class="row g-3 mt-2">
+                <div class="col-12">
+                  <label for="nombre_equipo" class="form-label">Nombre del equipo</label>
+                  <input id="nombre_equipo" name="nombre_equipo" type="text" class="form-control" required>
+                  <div class="invalid-feedback">Ingresa el nombre del equipo.</div>
+                </div>
 
-        <div class="col-12 col-md-6">
-          <label for="pais_equipo" class="form-label">País de origen</label>
-          <input id="pais_equipo" name="pais_equipo" type="text" class="form-control">
-        </div>
+                <div class="col-12">
+                  <label for="pais_equipo" class="form-label">País de origen</label>
+                  <input id="pais_equipo" name="pais_equipo" type="text" class="form-control">
+                </div>
 
-        <div class="col-12 col-md-4">
-          <label for="fundacion" class="form-label">Año de fundación</label>
-          <input id="fundacion" name="fundacion" type="number" class="form-control" min="1950" max="2025">
-        </div>
+                <div class="col-12 col-md-6">
+                  <label for="fundacion" class="form-label">Año de fundación</label>
+                  <input id="fundacion" name="fundacion" type="number" class="form-control" min="1950" max="2025">
+                </div>
 
-        <div class="col-12 col-md-4">
-          <label for="motor" class="form-label">Tipo de motor</label>
-          <select id="motor" name="motor" class="form-select">
-            <option>Honda</option>
-            <option>Mercedes</option>
-            <option>Ferrari</option>
-            <option>Renault</option>
-          </select>
-        </div>
+                <div class="col-12 col-md-6">
+                  <label for="motor" class="form-label">Tipo de motor</label>
+                  <select id="motor" name="motor" class="form-select">
+                    <option>Honda</option>
+                    <option>Mercedes</option>
+                    <option>Ferrari</option>
+                    <option>Renault</option>
+                  </select>
+                </div>
 
-        <div class="col-12 col-md-4">
-          <label for="pilotos" class="form-label">Pilotos principales</label>
-          <input id="pilotos" name="pilotos" type="text" class="form-control" placeholder="Ejemplo: Verstappen - Pérez">
-        </div>
+                <div class="col-12">
+                  <label for="pilotos" class="form-label">Pilotos principales</label>
+                  <input id="pilotos" name="pilotos" type="text" class="form-control" placeholder="Ejemplo: Verstappen - Pérez">
+                </div>
 
-        <div class="col-12 col-md-6">
-          <label for="presupuesto" class="form-label">Presupuesto anual (en millones USD)</label>
-          <input id="presupuesto" name="presupuesto" type="number" step="0.1" class="form-control">
-        </div>
-
-        <div class="col-12 col-md-6">
-          <label for="imagen" class="form-label">Imagen del monoplaza</label>
-          <input id="imagen" name="imagen" class="form-control" type="file" accept="image/*">
-        </div>
-
-        <div class="col-12">
-          <label class="form-label d-block">¿Participa en la temporada actual?</label>
-          <div class="form-check form-check-inline">
-            <input id="activo_si" class="form-check-input" type="radio" name="activo" value="Sí">
-            <label class="form-check-label" for="activo_si">Sí</label>
+                <div class="col-12">
+                  <label for="presupuesto" class="form-label">Presupuesto anual (en millones USD)</label>
+                  <input id="presupuesto" name="presupuesto" type="number" step="0.1" class="form-control">
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="form-check form-check-inline">
-            <input id="activo_no" class="form-check-input" type="radio" name="activo" value="No">
-            <label class="form-check-label" for="activo_no">No</label>
+
+          <div class="col-12 col-md-6">
+            <div class="card shadow-sm h-100 p-3">
+              <h3 class="h6">Detalles y apoyo</h3>
+              <div class="row g-3 mt-2">
+                <div class="col-12">
+                  <label for="imagen" class="form-label">Imagen del monoplaza</label>
+                  <input id="imagen" name="imagen" class="form-control" type="file" accept="image/*">
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label d-block">¿Participa en la temporada actual?</label>
+                  <div class="form-check form-check-inline">
+                    <input id="activo_si" class="form-check-input" type="radio" name="activo" value="Sí">
+                    <label class="form-check-label" for="activo_si">Sí</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input id="activo_no" class="form-check-input" type="radio" name="activo" value="No">
+                    <label class="form-check-label" for="activo_no">No</label>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="comentarios" class="form-label">Comentarios o notas adicionales</label>
+                  <textarea id="comentarios" name="comentarios" rows="5" class="form-control"></textarea>
+                </div>
+
+                <div class="col-12 d-flex gap-2 justify-content-end">
+                  <button type="submit" class="btn btn-primary">Registrar Escudería</button>
+                  <button type="reset" class="btn btn-outline-secondary">Limpiar</button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="col-12">
-          <label for="comentarios" class="form-label">Comentarios o notas adicionales</label>
-          <textarea id="comentarios" name="comentarios" rows="3" class="form-control"></textarea>
-        </div>
-
-        <div class="col-12 d-flex gap-2">
-          <button type="submit" class="btn btn-primary">Registrar Escudería</button>
-          <button type="reset" class="btn btn-outline-secondary">Limpiar</button>
         </div>
       </form>
     </section>
@@ -235,9 +772,9 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-light py-3">
+  <footer class="bg-dark text-white py-3">
     <div class="container text-center small">
-      &copy; <span id="year"></span> Fórmula 1. Todos los derechos reservados.
+      <span class="me-2">🏁</span>&copy; <span id="year"></span> Fórmula 1. Todos los derechos reservados.
     </div>
   </footer>
 
@@ -261,9 +798,7 @@
             form.classList.add('was-validated');
             return;
           }
-          // Si es válido, permitimos la acción personalizada:
-          event.preventDefault();
-          // Guardar datos en localStorage y redirigir
+          // Si es válido, guardamos una copia en localStorage y permitimos el envío normal (POST)
           const datos = {};
           const formData = new FormData(form);
           formData.forEach((valor, clave) => {
@@ -275,8 +810,7 @@
             }
           });
           localStorage.setItem('formularioF1', JSON.stringify(datos));
-          // Redirigir a página de verificación
-          window.location.href = form.getAttribute('action');
+          // No hacemos redirect por JS — permitimos que el formulario haga POST normalmente
         }, false);
       });
     })();
